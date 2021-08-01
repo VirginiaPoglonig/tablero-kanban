@@ -1,0 +1,52 @@
+img {
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+}
+
+.menu-container{
+  display:flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+.version{
+ 
+  margin-right: 50rem;
+
+}
+
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+
+.input{
+  width: 300px;
+  height: 30px;
+}
+
+.toDoList-container{
+  display: flex;
+  justify-content: left;
+}
+
+.task-number{
+margin-right: 10px;
+border-radius: 50px;
+background-color: lightgrey;
+}
+
+.todo{
+  margin-right: 200px;
+  
+}
+
+.add-button{
+  border: none;
+  background-color: white;
+
+}
