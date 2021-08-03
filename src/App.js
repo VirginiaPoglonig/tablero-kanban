@@ -19,30 +19,55 @@ function App() {
         <p>Updated on 12 Apr</p>
         <input className="input" placeholder="🔎filter cards"></input>
       </div>
-
-
       <div className='column-container'>
         <div className='todo-column column'>
-          <div className="toDoList-container header-container">
+          <div className="header-container">
             <div className='toDo-header'>
               <p className="task-number">1</p>
               <p className="todo">To do</p>
             </div>
             <button className="add-button">+</button>
+
+          </div>
+          <div class="añadir_tareas">
+
+            <input class="input_text" type="text"/>
+              <div class="botones">
+                <button class="boton add-button">Add</button>
+                <button class="boton add-button">Cancel</button>
+              </div>
+                    
+          </div>
+
+
+          </div>
+          <div className='inprogress-column column'>
+            <div className="header-container">
+              <div className='toDo-header'>
+                <p className="task-number">1</p>
+                <p className="todo">In progress</p>
+              </div>
+              <button className="add-button">+</button>
+            </div>
+          </div>
+          <div className='done-column column'>
+            <div className="header-container">
+              <div className='toDo-header'>
+                <p className="task-number">1</p>
+                <p className="todo">Done</p>
+              </div>
+              <button className="add-button">+</button>
+              <button className="clear_all add-button">Clear All</button>
+            </div>
           </div>
         </div>
-        <div className='inprogress-column column'>
 
-        </div>
-        <div className='done-column column'></div>
+
+
       </div>
+    
+    );
 
-
-
-
-
-    </div>
-  );
 }
 
-export default App;
+      export default App;
