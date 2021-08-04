@@ -1,0 +1,80 @@
+.column_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%;
+    height: 100vh;
+    border-radius: 15px;
+    overflow: auto;
+    background-color: #f6f8fa;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.column_header{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_number{
+   background-color:#E5E5E5 ;
+   width: 26px;
+   height: 28px;
+   border: 0.5px solid #E5E5E5;
+   border-radius: 11.5px;
+   padding-bottom: 5.2px;
+   padding-left: 7px;
+}
+
+.column_title{
+    color: rgb(43, 35, 35);
+    font-weight: 700;
+}
+
+.add_button_column{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.input_header_container{
+    display: flex;
+    flex-wrap: wrap;
+    height:6.25rem;
+    padding-top:0.5rem ;
+    padding-left: 0.5rem;
+    width: 100%;
+}
+
+.input_text{
+    height: 3.1rem;
+    width: 97%;
+    border-radius: 5px;
+}
+
+.buttons{
+    width: 100%;
+}
+
+.add_button{
+    width: 49%;
+    height: 30px;
+    background-color: #2ea44f;
+    
+}
+
+.add_button:disabled{
+    background-color: #2ea44f ;
+    opacity: 0.7;
+}
+
+
+.cancel_button{
+    width: 49%;
+    height: 30px;
+}
