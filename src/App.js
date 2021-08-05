@@ -5,7 +5,7 @@ import Header from './components/header';
 
 function App() {
   return (
-    <div className="">
+    <div className='container'>
       <Header></Header>
       <div className="input_container">
         <div className="container_version-date">

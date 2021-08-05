@@ -13,13 +13,24 @@ function Column() {
             </div>
             <div className="input_header_container">
                 <input className="input_text" type="text" required/>
-                <div className="buttons">
-                    <button className="add_button">Add</button>
-                    <button className="cancel_button">Cancel</button>
+                <div className="button-container">
+                    <button className="add_button button">Add</button>
+                    <button className="cancel_button button">Cancel</button>
                 </div>
 
             </div>
             <Card title="Creación del CI/CD para el frontal" status="done" id="23" date="20/05/20"></Card>
+            <Card title="Creación del CI/CD para el frontal 123451234123" status="done" id="23" date="20/05/20"></Card>
+            <Card title="hola :)" status="done" id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
+
+
+
+
+            
         </div>
 
     )
