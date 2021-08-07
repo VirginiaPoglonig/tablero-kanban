@@ -1,31 +1,26 @@
 import "./style.css"
 import Card from "../card"
+import Input from "../input"
 
 
 
-function Column() {
+function Column(props) {
     return (
         <div className="column_container">
             <div className="column_header">
-                <p className="header_number">1</p>
-                <p className="column_title">To do</p>
+                <p className="header_number">{props.numberOfCards}</p>
+                <p className="column_title">{props.columnName}</p>
                 <button className="add_button_column">+</button>
+                {props.clearall ? <button className="clearall_button">Clear All</button> : ''}
             </div>
-            <div className="input_header_container">
-                <textarea className="input_text" type="text" required></textarea>
-                <div className="button-container">
-                    <button className="add_button button">Add</button>
-                    <button className="cancel_button button">Cancel</button>
-                </div>
-
-            </div>
-            <Card title="Creación del CI/CD para el frontal" status="done" id="23" date="20/05/20"></Card>
-            <Card title="Creación del CI/CD para el frontal 123451234123" status="done" id="23" date="20/05/20"></Card>
-            <Card title="hola :)" status="done" id="23" date="20/05/20"></Card>
-            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
-            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
-            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
-            <Card title="TEST TEST TEST TEST TEST" status="done" id="23" date="20/05/20"></Card>
+            <Input></Input>
+            <Card title="Creación del CI/CD para el frontal" status={props.status} id="23" date="20/05/20"></Card>
+            <Card title="Creación del CI/CD para el frontal 123451234123" status={props.status} id="23" date="20/05/20"></Card>
+            <Card title="hola :)" status={props.status} id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status={props.status} id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status={props.status} id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status={props.status} id="23" date="20/05/20"></Card>
+            <Card title="TEST TEST TEST TEST TEST" status={props.status} id="23" date="20/05/20"></Card>
 
 
 

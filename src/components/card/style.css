@@ -16,7 +16,11 @@
 .radio_button{
     color: #22863a;
     margin-top: 0.5rem;
+}
 
+.check_circle{
+    color: #cb2431;
+    margin-top: 0.5rem;
 }
 
 .title_container{
