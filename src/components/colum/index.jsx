@@ -12,7 +12,7 @@ function Column() {
                 <button className="add_button_column">+</button>
             </div>
             <div className="input_header_container">
-                <input className="input_text" type="text" required/>
+                <textarea className="input_text" type="text" required></textarea>
                 <div className="button-container">
                     <button className="add_button button">Add</button>
                     <button className="cancel_button button">Cancel</button>
