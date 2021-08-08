@@ -7,6 +7,7 @@ import { AddRounded } from "@material-ui/icons";
 
 function Column(props) {
     const [show, setShow] = useState(true);
+    const [description, setDescription] = useState("");
     return (
         <div className="column_container">
             <div className="column_header">
@@ -18,10 +19,10 @@ function Column(props) {
                 {props.clearall ? <button className="clearall_button" >Clear All</button> : ''}
 
             </div>
-            <div className="input_header_container" style={{ display: show ? "block" : "none" }} >
+            <div className="input_header_container" style={{ display: show ? "block" : "none" }} value={description} onChange={e => setDescription(e.target.value)}>
                 <textarea className="input_text" type="text" required></textarea>
                 <div className="button-container">
-                    <button className="add_button button">Add</button>
+                    <button className="add_button button" disabled={description ? "" : "disabled"}>Add</button>
                     <button className="cancel_button button">Cancel</button>
                 </div>
 
