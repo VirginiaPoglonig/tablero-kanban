@@ -3,7 +3,7 @@
     /* flex-direction: column; */
     flex-wrap: wrap;
     width: 32%;
-    height: 87vh;
+    height: 83vh;
     border-radius: 15px;
     overflow: auto;
     background-color: #f6f8fa;
@@ -13,7 +13,7 @@
 }
 
 .column_header{
-    height: 5%;
+    /* height: 5%; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -41,6 +41,7 @@
 .clearall_button{
     border: none;
     background-color: transparent;
+    margin-left: 1rem;
 }
 
 .add_button_column{
@@ -48,6 +49,9 @@
     height: 15px;
     background-color: transparent;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .input_header_container{
@@ -55,8 +59,8 @@
     min-height:13vh;
     width: 100%;
     flex-direction: column;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    /* margin-bottom: 0.5rem;
+    margin-top: 0.5rem; */
 }
 
 .input_text{
@@ -83,7 +87,7 @@
 
 .button{
     border-radius: 10px;
-    border: 1px solid black;
+    border: 0.5px solid rgba(27,31,35,0.15);
     width: 48%;
     height: auto;
     padding: 0.75rem 0;
@@ -101,11 +105,14 @@
     opacity: 0.7;
 }
 
-
-.cancel_button{
-}
-
 .number-title-container{
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
+
+.add-clear-container{
+    display: flex;
+    flex-direction: row;
+}
+

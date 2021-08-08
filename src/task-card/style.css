@@ -1,0 +1,11 @@
+.deleteoutline-icon{
+color: black;
+}
+
+.checkcircle-icon{
+    color:green;
+}
+
+.task-container{
+    display: flex;
+}
