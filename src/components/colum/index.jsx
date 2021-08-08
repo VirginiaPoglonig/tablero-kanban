@@ -15,9 +15,10 @@ function Column(props) {
                     <p className="header_number">{props.numberOfCards}</p>
                     <p className="column_title">{props.columnName}</p>
                 </div>
-                <button className="add_button_column" onClick={() => setShow((s) => !s)}><AddRounded/></button>
-                {props.clearall ? <button className="clearall_button" >Clear All</button> : ''}
-
+                <div className='add-clear-container'>
+                    <button className="add_button_column" onClick={() => setShow((s) => !s)}><AddRounded /></button>
+                    {props.clearall ? <button className="clearall_button" >Clear All</button> : ''}
+                </div>
             </div>
             <div className="input_header_container" style={{ display: show ? "block" : "none" }} value={description} onChange={e => setDescription(e.target.value)}>
                 <textarea className="input_text" type="text" required></textarea>
